@@ -31,7 +31,7 @@ Make sure you have the following installed:
 2. Modify the script to include your API keys:
    ```python
    llamaApiKey = "YOUR_LLAMA_API_KEY"
-   vtApiKey = "YOUR_VIRUSTOTAL_API_KEY"
+   headers = {"x-apikey": "YOUR_VIRUS_TOTAL_API_KEY"}
    ```
 
 3. Run the script:
