@@ -81,7 +81,7 @@ def extractMalware(reportText):
     enrichedMalware = []
     for malware in malwareList:
         vtUrl = f"https://www.virustotal.com/api/v3/files/{malware}"
-        headers = {"x-apikey": "x-apikey"}
+        headers = {"x-apikey": "YOUR_VIRUS_TOTAL_API_KEY"}
         try:
             vtResponse = requests.get(vtUrl, headers=headers)
             vtResponse.raiseForStatus()
